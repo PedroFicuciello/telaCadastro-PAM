@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
+import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +40,17 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                //ESCREVER CÓDIGOOOOOOOOOOOOO
+                String pass = senha.getText().toString();
+                String passConfirm = confirmarSenha.getText().toString();
+
+                if(pass.equals(passConfirm)) {
+                    Toast.makeText(MainActivity.this, "Login realizado com sucesso!", Toast.LENGTH_LONG).show();
+                }
+
+                else {
+                    Toast.makeText(MainActivity.this,"Usuário ou senha incorretos. Tente novamente!",Toast.LENGTH_LONG).show();
+                }
+
 
             }
         });
@@ -49,12 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick (View v) {
 
-                nome.setText(" ");
-                sobrenome.setText(" ");
-                email.setText(" ");
-                nomeUsuario.setText(" ");
-                senha.setText(" ");
-                confirmarSenha.setText(" ");
+                nome.setText("");
+                sobrenome.setText("");
+                email.setText("");
+                nomeUsuario.setText("");
+                senha.setText("");
+                confirmarSenha.setText("");
             }
         });
     }

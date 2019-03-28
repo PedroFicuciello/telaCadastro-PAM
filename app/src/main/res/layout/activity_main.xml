@@ -89,9 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="232dp" />
+            android:inputType="textPassword" />
 
         <TextView
             android:id="@+id/txtConfirmarSenha"
@@ -104,7 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPassword" />
 
     </LinearLayout>
 
@@ -121,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Confimar"
+            android:text="Confirmar"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="346dp" />
 
